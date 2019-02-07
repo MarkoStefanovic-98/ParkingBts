@@ -14,7 +14,7 @@ if(!isset($_GET['p']) || $_GET['p'] == "")
 }
 else
 {
-    if(!file_exists("controller/".$_GET['p'].".php"))
+    if(!file_exists("Controller/".$_GET['p'].".php"))
         {
             $page = 404;
         }
@@ -22,7 +22,7 @@ else
             $page = $_GET['p'];
     }
     ob_start();//suspend l'affichage
-    require "controller/".$page.".php";
+    require "Controller/".$page.".php";
     $content = ob_get_contents();//recuperer ce qui n'a pas ete affiché
     ob_end_clean();//reprend l'affichage
 
