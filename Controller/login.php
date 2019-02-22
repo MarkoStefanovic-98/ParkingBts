@@ -9,11 +9,11 @@ if(isset($_COOKIE['auth']) && !isset($_SESSION['auth']))
     $auth = explode('_____',$auth);
     $user = get_user_cookie($auth[0]);
 
-    $key = sha1($user['mail'].$user['password'].$_SERVER['REMOTE_ADDR']);
+    $key = sha1($user['mail'].$user['mdp'].$_SERVER['REMOTE_ADDR']);
     if($key == $auth[1])
     {
         $_SESSION['auth'] = $user; 
-        setcookie('auth',$user['id_s'].'_____'.sha1($user['mail'].$user['password'].$_SERVER['REMOTE_ADDR']),time()+(3600*24*3),'/','localhost');
+        setcookie('auth',$user['id_s'].'_____'.sha1($user['mail'].$user['mdp'].$_SERVER['REMOTE_ADDR']),time()+(3600*24*3),'/','localhost');
         
         if($user['level'] == 1)
         header("Location:".BASE_URL."/admin");
@@ -40,9 +40,9 @@ if(isset($_POST['submit']))
         $_SESSION['auth'] = $user; //connection user
         if(isset($_POST['remember']))
         {
-            setcookie('auth',$user['id_s'].'_____'.sha1($user['mail'].$user['password'].$_SERVER['REMOTE_ADDR']),time()+(3600*24*3),'/','localhost');
+            setcookie('auth',$user['id_s'].'_____'.sha1($user['mail'].$user['mdp'].$_SERVER['REMOTE_ADDR']),time()+(3600*24*3),'/','localhost');
         }
-        if($user['level'] == 1)
+        if($user['level'] == 3)
         header("Location:".BASE_URL."/admin");
     	elseif($user['level'] == 2)
         header("Location:".BASE_URL."/chef");

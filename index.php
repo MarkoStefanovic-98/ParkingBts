@@ -1,6 +1,6 @@
 <?php
 session_start();
-  require "modele/connexion.php";  
+  require "Modele/connexion.php";  
   
   define('WEBROOT', dirname(__FILE__));
   define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));

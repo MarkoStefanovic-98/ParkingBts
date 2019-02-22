@@ -27,7 +27,7 @@
                 </label>
               </div>
             </div>
-            <a class="btn btn-primary btn-block" name="submit" href="index.html">Login</a>
+            <button class="btn btn-primary btn-block" name="submit">Login</button>
           </form>
           <div class="text-center">
             <a class="d-block small mt-3" href="register.html">Register an Account</a>
