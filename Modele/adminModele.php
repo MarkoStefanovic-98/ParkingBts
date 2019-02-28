@@ -77,7 +77,7 @@
     {
         global $bdd;
 
-        $requete = $bdd->prepare("INSERT INTO place(nom_p) VALUES (:nom_p)");
+        $requete = $bdd->prepare("INSERT INTO place (nom_p) VALUES (:nom_p)");
 
         $requete->bindValue(":nom_p", $nom_p,PDO::PARAM_STR);
         $requete->execute();

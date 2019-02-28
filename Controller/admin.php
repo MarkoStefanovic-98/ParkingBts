@@ -24,6 +24,7 @@
         ajoutPlace($nom_p);
         header("location:".BASE_URL."/admin");
     }
+
     
     $req = waitList();
 
@@ -31,7 +32,7 @@
     $usedPlaceRefus = displayUsedPlaceRefus();
     $acceptme = afficherInscrit();
 
-    require "View/adminView.php";
+    require "view/adminView.php";
 
 
 ?>
