@@ -2,79 +2,41 @@
 
 require "Modele/loginModele.php";
 
-if(isset($_COOKIE['auth']) && !isset($_SESSION['auth']))
+if(isset($_POST['submit']))
 {
+    $mail = $_POST['mail'];
+    $mdp = sha1($_POST['mdp']);
 
-    $auth = $_COOKIE['auth'];
-    $auth = explode('_____',$auth);
-    $user = get_user_cookie($auth[0]);
+    $requete = $bdd->prepare("SELECT * FROM user WHERE mail = :mail AND mdp = :mdp");
+    $requete->bindValue(":mail",$mail,PDO::PARAM_STR);
+    $requete->bindValue(":mdp",$mdp,PDO::PARAM_STR);
+    $requete->execute();
 
-    $key = sha1($user['mail'].$user['mdp'].$_SERVER['REMOTE_ADDR']);
-    if($key == $auth[1])
+    if($reponse = $requete->fetch())
     {
-        $_SESSION['auth'] = $user; 
-        setcookie('auth',$user['id_s'].'_____'.sha1($user['mail'].$user['mdp'].$_SERVER['REMOTE_ADDR']),time()+(3600*24*3),'/','localhost');
+        $_SESSION['connecte'] = true;
+        $_SESSION['id_u'] = $reponse['id_u'];
+        $_SESSION['lvl'] = $reponse['lvl'];
+        if(isset($_POST['remember']))
+        {
+            setcookie('auth',$reponse['id_u']."-----".sha1($reponse['mail'].$reponse['mdp'].$_SERVER['REMOTE_ADDR']),time()+(3600*24*3),'/','localhost',false,true); //le dernier argument evite que le cookie soit editable en javascript
+        }
+    
+    if($SESSION['lvl'] = 2){
         
-        if($user['level'] == 1)
-        header("Location:".BASE_URL."/admin");
-        elseif($user['level'] == 2)
-        header("Location:".BASE_URL."/chef");
-        else
-        header("Location:".BASE_URL."/accueil");
+        header('Location:'.BASE_URL.'/accueil');
+        
+                            }  
+    if($SESSION['lvl'] = 3){
+        
+        header('Location:'.BASE_URL.'/admin');
+        
+                            }
     }
     else
     {
-        setcookie('auth','',time()-3600);
+        echo "Mauvais identifiant";
     }
-}
-
-
-if(isset($_POST['submit']))
-{
-    $user = get_user($_POST);
-    $user_mail = get_user_mail($_POST);
-            
-    if($user)
-    {
-        $_SESSION['i'] = 0;
-        $_SESSION['auth'] = $user; //connection user
-        if(isset($_POST['remember']))
-        {
-            setcookie('auth',$user['id_s'].'_____'.sha1($user['mail'].$user['mdp'].$_SERVER['REMOTE_ADDR']),time()+(3600*24*3),'/','localhost');
-        }
-        if($user['level'] == 3)
-        header("Location:".BASE_URL."/admin");
-    	elseif($user['level'] == 2)
-        header("Location:".BASE_URL."/chef");
-    	else
-        header("Location:".BASE_URL."/accueil");
-    	
-                   
-     }
-     else
-     {   
-         if($user_mail)
-         {
-             $_SESSION['i'] = $_SESSION['i'] + 1;
-             if($_SESSION['i'] < 3)
-             {
-                echo'<div class="alert alert-warning">Mauvais identifiants ! '.$_SESSION['i'].' tentative(s)</div>';
-             }
-             
-             elseif($_SESSION['i'] >= 3)
-             {
-                setErreur($user_mail['id_s'],$user_mail['erreur']);
-                 
-                echo'<div class="alert alert-warning">3 tentatives de connexions erronées - Echec enregistré !</div>';
-                 
-                $_SESSION['i'] = 0;
-             }
-         }
-         else
-         {
-             echo '<div class="alert alert-warning">Cette utilisateur n\'existe pas !</div>';
-         }
-     }
 }
 
 require "View/loginView.php"

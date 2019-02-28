@@ -26,7 +26,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-user-circle fa-fw"></i> </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown"> <a class="dropdown-item" href="#">Settings</a>
                     <?php
-                       if (isset($_SESSION['auth']))
+                       if (isset($_SESSION['connecte']))
             {      
                echo '<div class="dropdown-divider"></div> <a class="dropdown-item" href="'.BASE_URL.'/disconnect" data-toggle="modal" data-target="#logoutModal">Logout</a> </div>';
             }
@@ -39,28 +39,25 @@
         <ul class="sidebar navbar-nav">
             <?php
                      
-        if (isset($_SESSION['auth']))
+        if (isset($_SESSION['connecte']))
             { 
         echo' <li class="nav-item active">
           <a class="nav-link" href="'.BASE_URL.'/accueil">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Accueil</span>
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Demande</span></a>
         </li>';
+        
             }
         else
-        {
-            echo '<li class="nav-item">
-          <a class="nav-link" href="'.BASE_URL.'/login">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Connexion</span></a>
-        </li>';
-        }
+            
+            {
+             echo '<li class="nav-item">
+                  <a class="nav-link" href="'.BASE_URL.'/login">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Connexion</span></a>
+                </li>';
+            }
           ?>
         </ul>
         <div id="content-wrapper">
