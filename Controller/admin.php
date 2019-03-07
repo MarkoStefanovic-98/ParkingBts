@@ -10,7 +10,7 @@
         if(isset($_GET['id']))
         {
             suppUser($_GET['id']);
-            header("location:".BASE_URL."/adminController");
+            header("location:".BASE_URL."/admin");
         }
     }
     else
@@ -31,6 +31,7 @@
     $usedPlace = displayUsedPlace();
     $usedPlaceRefus = displayUsedPlaceRefus();
     $acceptme = afficherInscrit();
+    $afficheUser = afficherUser();
 
     require "view/adminView.php";
 
