@@ -11,6 +11,7 @@ Bienvenue Grand ADMIN
     <a class="nav-item nav-link" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="false">Les places</a> 
     </div>
 </nav>
+
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-demandes" role="tabpanel" aria-labelledby="nav-demandes-tab">
         <table class="table table-hover">
@@ -38,11 +39,12 @@ Bienvenue Grand ADMIN
                 </tr>
                 <?php
             }
+            
         ?>
         </table>
     </div>
     
-    <div class="tab-pane fade show active" id="nav-profiles" role="tabpanel" aria-labelledby="nav-profiles-tab">
+      <div class="tab-pane fade" id="nav-profiles" role="tabpanel" aria-labelledby="nav-profiles-tab">
         <table class="table table-hover">
             <thead>
                 <tr>
