@@ -1,5 +1,5 @@
 <?php
-    require "modele/adminModele.php";
+    require "Modele/adminModele.php";
     $id_u = $_GET ['id'];
 
     acceptInscription($id_u);

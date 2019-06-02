@@ -8,6 +8,7 @@ session_start();
   define('DS', DIRECTORY_SEPARATOR);
   define('CORE',ROOT.DS.'core');
 
+
 if(!isset($_GET['p']) || $_GET['p'] == "")
 {
         $page = "accueil";

@@ -30,10 +30,11 @@
 
     $usedPlace = displayUsedPlace();
     $usedPlaceRefus = displayUsedPlaceRefus();
+    $PlaceLibre = displayFreePlace();
     $acceptme = afficherInscrit();
     $afficheUser = afficherUser();
 
-    require "view/adminView.php";
+    require "View/adminView.php";
 
 
 ?>

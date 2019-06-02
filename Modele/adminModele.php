@@ -90,7 +90,7 @@
     {
         global $bdd;
         
-        $req = $bdd->prepare("SELECT p.id_p, p.nom_p, u.nom, u.prenom FROM reserver r, place p, user u WHERE p.id_p = r.id_p AND r.id_u = u.id_u AND r.lvl = 1");
+        $req = $bdd->prepare("SELECT p.id_p, p.nom_p, r.date_deb, r.date_fin, u.nom, u.prenom FROM reserver r, place p, user u WHERE p.id_p = r.id_p AND r.id_u = u.id_u AND r.lvl = 1 AND date_fin > CURDATE()");
         $req->execute();
         
         return $req;
@@ -106,6 +106,16 @@
         return $req;
     }
 
+    function displayFreePlace()
+    {
+    global $bdd;
+    $req = $bdd->prepare("SELECT * FROM place Pres where Pres.id_p not in
+                        (SELECT p.id_p FROM reserver r, place p, user u WHERE p.id_p = r.id_p 
+                        AND r.id_u = u.id_u AND r.lvl = 1 AND date_fin > CURDATE())");
+    $req->execute();
+
+    return $req;
+    }
 
     function deleteUsedPlace($id_p)
     {
@@ -116,6 +126,17 @@
         $req->execute();
 
         return $req->fetch();
+    }
+
+    function leCompte($id_u)
+    {
+    global $bdd;
+
+    $req = $bdd->prepare("SELECT * FROM user where lvl = 2 and id_u = :id_u");
+    $req->bindValue(":id_u", $id_u,  PDO::PARAM_INT);
+    $req->execute();
+
+    return $req->fetchAll();
     }
 
 ?>

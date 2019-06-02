@@ -1,3 +1,3 @@
 <?php
-require "view/accueilView.php";
+require "View/accueilView.php";
 ?>

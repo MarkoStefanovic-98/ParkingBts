@@ -7,8 +7,10 @@ Bienvenue Grand ADMIN
 <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-demandes-tab" data-toggle="tab" href="#nav-demandes" role="tab" aria-controls="nav-demandes" aria-selected="true">Les demandes d'inscriptions</a> 
-    <a class="nav-item nav-link" id="nav-profiles-tab" data-toggle="tab" href="#nav-profiles" role="tab" aria-controls="nav-profiles" aria-selected="false">Les profiles</a> 
-    <a class="nav-item nav-link" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="false">Les places</a> 
+    <a class="nav-item nav-link" id="nav-profiles-tab" data-toggle="tab" href="#nav-profiles" role="tab" aria-controls="nav-profiles" aria-selected="false">Les profiles</a>
+    <a class="nav-item nav-link" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="false">Les places en cours</a>
+    <a class="nav-item nav-link" id="nav-user-tab" data-toggle="tab" href="#nav-user" role="tab" aria-controls="nav-user" aria-selected="false">Les demandes de places</a>
+    <a class="nav-item nav-link" id="nav-pl-tab" data-toggle="tab" href="#nav-pl" role="tab" aria-controls="nav-pl" aria-selected="false">Place Libre</a>
     </div>
 </nav>
 
@@ -49,7 +51,7 @@ Bienvenue Grand ADMIN
             <thead>
                 <tr>
                     <th>Nom / Prénom</th>
-                    <th>Email</th>
+                    <th>Compte</th>
                     <th>Supprimer</th>
                 </tr>
             </thead>
@@ -62,7 +64,7 @@ Bienvenue Grand ADMIN
                         <?= $value['nom']."  ".$value['prenom'];?>
                     </td>
                     <td>
-                        <?= $value['mail'];?>
+                        <a href="<?=BASE_URL;?>/compte/<?=$value['id_u'];?>">Compte</a>
                     </td>
                     <td><a href="<?=BASE_URL;?>/admin/<?=$value['id_u'];?>">Supprimer</a></td>
                 </tr>
@@ -96,6 +98,8 @@ Bienvenue Grand ADMIN
                     <tr>
                         <th>Nom / Prénom</th>
                         <th>Place</th>
+                        <th>Date Début</th>
+                        <th>Date Fin</th>
                         <th>Supprimer</th>
                     </tr>
                 </thead>
@@ -111,6 +115,12 @@ Bienvenue Grand ADMIN
                             <td>
                                 <?= $reponse['nom_p'];?>
                             </td>
+                            <td>
+                                <?= $reponse['date_deb'];?>
+                            </td>
+                            <td>
+                                <?= $reponse['date_fin'];?>
+                            </td>
                             <td><a href="<?=BASE_URL;?>/deleteUsedPlace/<?= $reponse['id_p'];?>">Supprimer</a></td>
                         </tr>
                         <?php } ?>
@@ -118,4 +128,69 @@ Bienvenue Grand ADMIN
             </table>
         </div>
     </div>
+
+    <div class="tab-pane fade" id="nav-user" role="tabpanel" aria-labelledby="nav-user-tab">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Nom / Prénom</th>
+                    <th>Nom de la place</th>
+                    <th>Date</th>
+                    <th>Etat</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                foreach($req as $key => $value){
+                ?>
+                <tr>
+                    <td>
+                        <?=$value['nom']." ".$value['prenom'] ;?>
+                    </td>
+                    <td>
+                        <?=$value['nom_p'];?>
+                    </td>
+                    <td>
+                        <?=$value['date_deb'];?></td>
+                    <td>
+                        <a href="<?=BASE_URL;?>/accepter/<?= $value['id_p'];?>">Accepter</a> / <a href="<?=BASE_URL;?>/refuser/<?= $value['id_p'];?>">Refuser</a>
+                    </td>
+                </tr>
+                <?php
+                }
+                ?>
+                </tbody>
+            </table>
+    </div>
+
+    <div class="tab-pane fade" id="nav-pl" role="tabpanel" aria-labelledby="nav-pl-tab">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Nom de la place</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php
+            foreach($PlaceLibre as $key => $value){
+                ?>
+                <tr>
+                    <td>
+                        <?=$value['id_p'];?>
+
+                    </td>
+                </tr>
+                <?php
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
 </div>

@@ -58,7 +58,24 @@
                     <span>Connexion</span></a>
                 </li>';
             }
-          ?>
+
+            if (isset($_SESSION['connecte'])AND ($_SESSION['lvl'] == 3))
+            {
+                echo '<li class="nav-item">
+                  <a class="nav-link" href="'.BASE_URL.'/admin">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Gestion-Admin</span></a>
+                </li>';
+            }
+            elseif (isset($_SESSION['connecte'])AND ($_SESSION['lvl'] == 2))
+            {
+                echo '<li class="nav-item">
+                  <a class="nav-link" href="'.BASE_URL.'/user">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Gestion-User</span></a>
+                </li>';
+            }
+            ?>
         </ul>
         <div id="content-wrapper">
             <div>
