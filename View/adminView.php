@@ -11,6 +11,7 @@ Bienvenue Grand ADMIN
     <a class="nav-item nav-link" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="false">Les places en cours</a>
     <a class="nav-item nav-link" id="nav-user-tab" data-toggle="tab" href="#nav-user" role="tab" aria-controls="nav-user" aria-selected="false">Les demandes de places</a>
     <a class="nav-item nav-link" id="nav-pl-tab" data-toggle="tab" href="#nav-pl" role="tab" aria-controls="nav-pl" aria-selected="false">Place Libre</a>
+    <a class="nav-item nav-link" id="nav-his-tab" data-toggle="tab" href="#nav-his" role="tab" aria-controls="nav-his" aria-selected="false">Historique</a>
     </div>
 </nav>
 
@@ -167,6 +168,7 @@ Bienvenue Grand ADMIN
         <table class="table table-hover">
             <thead>
             <tr>
+                <th>Référence ID</th>
                 <th>Nom de la place</th>
             </tr>
             </thead>
@@ -177,7 +179,9 @@ Bienvenue Grand ADMIN
                 <tr>
                     <td>
                         <?=$value['id_p'];?>
-
+                    </td>
+                    <td>
+                        <?=$value['nom_p'];?>
                     </td>
                 </tr>
                 <?php
@@ -187,6 +191,36 @@ Bienvenue Grand ADMIN
         </table>
     </div>
 
+    <div class="tab-pane fade" id="nav-his" role="tabpanel" aria-labelledby="nav-his-tab">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Nom / Prénom</th>
+                <th>Nom de la place</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php
+            foreach($afficheHisto as $key => $value){
+                ?>
+                <tr>
+                    <td>
+                        <?=$value['nom'] / $value['prenom'];?>
+                    </td>
+                    <td>
+                        <?=$value['nom_p'];?>
+                    </td>
+                    <td>
+                        <?=$value['nom'] / $value['prenom'];?>
+                    </td>
+                </tr>
+                <?php
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
 
 
 

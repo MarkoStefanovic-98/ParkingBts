@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef631fe6-b974-4095-b22d-ccb989d4a67a" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/Controller/compte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/acceptInscrit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/acceptInscrit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/deleteUsedPlace.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/deleteUsedPlace.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modele/adminModele.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modele/adminModele.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modele/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modele/connexion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/adminView.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/adminView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout.php" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/Controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modele/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modele/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
->>>>>>> maj admin
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,42 +38,26 @@
     <session id="760855279">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-<<<<<<< HEAD
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.11" value="3" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="7" />
-=======
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
->>>>>>> maj admin
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conf" value="2" />
           <entry key="htaccess" value="4" />
-<<<<<<< HEAD
-          <entry key="php" value="45" />
-=======
-          <entry key="php" value="3" />
->>>>>>> maj admin
+          <entry key="php" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-<<<<<<< HEAD
-          <entry key="PHP" value="45" />
-=======
-          <entry key="PHP" value="3" />
->>>>>>> maj admin
+          <entry key="PHP" value="56" />
           <entry key="SmartyConfig" value="2" />
           <entry key="htaccess" value="4" />
         </counts>
@@ -94,81 +65,79 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="htaccess" value="5" />
-<<<<<<< HEAD
-          <entry key="php" value="1198" />
-=======
-          <entry key="php" value="34" />
->>>>>>> maj admin
+          <entry key="php" value="1817" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-<<<<<<< HEAD
-          <entry key="PHP" value="1170" />
-          <entry key="SQL" value="28" />
-=======
-          <entry key="PHP" value="34" />
->>>>>>> maj admin
+          <entry key="PHP" value="1749" />
+          <entry key="SQL" value="68" />
           <entry key="htaccess" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
-    <leaf />
+    <splitter split-orientation="horizontal" split-proportion="0.49405646">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Controller/admin.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="601">
+                  <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/View/adminView.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="473">
+                  <caret line="215" column="14" selection-start-line="215" selection-start-column="14" selection-end-line="215" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/layout.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-976">
+                  <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Modele/adminModele.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="128">
+                  <caret line="119" selection-start-line="119" selection-end-line="126" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Controller/login.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-65">
+                  <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>req</find>
     </findStrings>
-=======
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../benoitconf/apache2.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4320">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../apache2.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4504" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
->>>>>>> maj admin
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -176,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/Controller/login.php" />
         <option value="$PROJECT_DIR$/layout.php" />
@@ -186,18 +154,13 @@
         <option value="$PROJECT_DIR$/View/compteView.php" />
         <option value="$PROJECT_DIR$/Controller/refuser.php" />
         <option value="$PROJECT_DIR$/Controller/accepter.php" />
-        <option value="$PROJECT_DIR$/View/adminView.php" />
-        <option value="$PROJECT_DIR$/Modele/adminModele.php" />
         <option value="$PROJECT_DIR$/Controller/acceptInscrit.php" />
         <option value="$PROJECT_DIR$/Controller/accueil.php" />
-        <option value="$PROJECT_DIR$/Controller/admin.php" />
         <option value="$PROJECT_DIR$/Controller/deleteUsedPlace.php" />
         <option value="$PROJECT_DIR$/Controller/suppUser.php" />
-=======
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/layout.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
->>>>>>> maj admin
+        <option value="$PROJECT_DIR$/Controller/admin.php" />
+        <option value="$PROJECT_DIR$/Modele/adminModele.php" />
+        <option value="$PROJECT_DIR$/View/adminView.php" />
       </list>
     </option>
   </component>
@@ -213,11 +176,7 @@
       <path value="$PROJECT_DIR$/vendor/package.json" />
     </packageJsonPaths>
   </component>
-<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
-=======
-  <component name="ProjectFrameBounds" extendedState="7">
->>>>>>> maj admin
     <option name="x" value="400" />
     <option name="y" value="204" />
     <option name="width" value="2400" />
@@ -236,7 +195,6 @@
               <item name="ParkingBts" type="b2602c69:ProjectViewProjectNode" />
               <item name="ParkingBts" type="462c0819:PsiDirectoryNode" />
             </path>
-<<<<<<< HEAD
             <path>
               <item name="ParkingBts" type="b2602c69:ProjectViewProjectNode" />
               <item name="ParkingBts" type="462c0819:PsiDirectoryNode" />
@@ -252,8 +210,6 @@
               <item name="ParkingBts" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
-=======
->>>>>>> maj admin
           </expand>
           <select />
         </subPane>
@@ -297,30 +253,23 @@
       <workItem from="1555003037409" duration="1995000" />
       <workItem from="1555006411790" duration="77000" />
       <workItem from="1555054769439" duration="3367000" />
-<<<<<<< HEAD
       <workItem from="1555663240040" duration="2225000" />
       <workItem from="1556263660091" duration="2451000" />
       <workItem from="1559479007091" duration="17505000" />
-=======
->>>>>>> maj admin
+      <workItem from="1559510486797" duration="4910000" />
+      <workItem from="1559589773346" duration="909000" />
+      <workItem from="1559590956312" duration="1050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="28683000" />
-=======
-    <option name="totallyTimeSpent" value="6502000" />
->>>>>>> maj admin
+    <option name="totallyTimeSpent" value="35556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1613" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13054663" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20128617" />
->>>>>>> maj admin
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13440515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -348,7 +297,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../M2LWEB-masterSERVEUR/M2LWEB-master/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -392,13 +340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/compte.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -416,13 +357,6 @@
     <entry file="file://$PROJECT_DIR$/Controller/disconnect.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/refuser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -434,27 +368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modele/adminModele.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/accueilView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/adminView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4186">
-          <caret line="182" column="21" lean-forward="true" selection-start-line="182" selection-start-column="21" selection-end-line="182" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -478,56 +391,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1022">
-          <caret line="64" column="31" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
-=======
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../M2LWEB-masterSERVEUR/M2LWEB-master/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout.php">
+    <entry file="file://$PROJECT_DIR$/View/accueilView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="-65">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/Controller/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="601">
+          <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../apache2.conf">
+    <entry file="file://$PROJECT_DIR$/Modele/adminModele.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4504" />
+        <state relative-caret-position="128">
+          <caret line="119" selection-start-line="119" selection-end-line="126" selection-end-column="5" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../benoitconf/apache2.conf">
+    <entry file="file://$PROJECT_DIR$/layout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4320">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
->>>>>>> maj admin
+        <state relative-caret-position="-976">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/adminView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="215" column="14" selection-start-line="215" selection-start-column="14" selection-end-line="215" selection-end-column="14" />
         </state>
       </provider>
     </entry>

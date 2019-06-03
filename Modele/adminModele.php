@@ -117,6 +117,24 @@
     return $req;
     }
 
+    function displayHistorique()
+    {
+    global $bdd;
+    $req = $bdd->prepare("SELECT u.nom, u.prenom, r.date_deb, r.date_fin, p.nom_p FROM reserver r, user u, place p WHERE u.id_u = r.id_u AND p.id_p = r.id_p");
+    $req->execute();
+
+    return $req;
+    }
+
+function displayReserver()
+{
+    global $bdd;
+    $req = $bdd->prepare("SELECT * FROM reserver");
+    $req->execute();
+
+    return $req;
+}
+
     function deleteUsedPlace($id_p)
     {
         global $bdd;
