@@ -197,7 +197,7 @@ Bienvenue Grand ADMIN
             <tr>
                 <th>Nom / Prénom</th>
                 <th>Nom de la place</th>
-                <th>Date</th>
+                <th>Date Deb - Date Fin</th>
             </tr>
             </thead>
             <tbody>
