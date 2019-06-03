@@ -17,7 +17,11 @@ if(isset($_POST['submit']))
         $_SESSION['connecte'] = true;
         $_SESSION['id_u'] = $reponse['id_u'];
         $_SESSION['lvl'] = $reponse['lvl'];
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> maj admin
     if($SESSION['lvl'] = 2){
         
         header('Location:'.BASE_URL.'/accueil');
