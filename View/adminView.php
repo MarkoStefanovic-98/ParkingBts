@@ -206,13 +206,19 @@ Bienvenue Grand ADMIN
                 ?>
                 <tr>
                     <td>
-                        <?=$value['nom'] / $value['prenom'];?>
+                        <?php
+                        echo $value['nom']." ".$value['prenom'];
+                        ?>
                     </td>
                     <td>
-                        <?=$value['nom_p'];?>
+                        <?php
+                        echo $value['nom_p'];
+                        ?>
                     </td>
                     <td>
-                        <?=$value['nom'] / $value['prenom'];?>
+                        <?php
+                        echo $value['date_deb']." ".$value['date_fin'];
+                        ?>
                     </td>
                 </tr>
                 <?php

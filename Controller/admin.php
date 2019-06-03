@@ -34,7 +34,6 @@
     $acceptme = afficherInscrit();
     $afficheUser = afficherUser();
     $afficheHisto = displayHistorique();
-    $histo = displayReserver();
 
     require "View/adminView.php";
 

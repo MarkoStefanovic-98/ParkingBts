@@ -126,15 +126,6 @@
     return $req;
     }
 
-function displayReserver()
-{
-    global $bdd;
-    $req = $bdd->prepare("SELECT * FROM reserver");
-    $req->execute();
-
-    return $req;
-}
-
     function deleteUsedPlace($id_p)
     {
         global $bdd;

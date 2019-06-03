@@ -3,7 +3,7 @@ session_start();
   require "Modele/connexion.php";  
   
   define('WEBROOT', dirname(__FILE__));
-  define('BASE_URL', dirname($_SERVER['SERVER_ROOT']));
+  define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
   define('ROOT', dirname(WEBROOT));
   define('DS', DIRECTORY_SEPARATOR);
   define('CORE',ROOT.DS.'core');
