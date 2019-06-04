@@ -108,18 +108,29 @@
             <thead>
             <tr>
                 <th>Nom / Prénom</th>
-                <th>formulaire a mettre</th>
-                <th>Supprimer</th>
+                <th>mail</th>
+                <th>Modifier votre compte</th>
             </tr>
             </thead>
+            <?php
+            foreach($info as $key => $value)
+            {
+                ?>
             <tr>
                 <td>
+                    <?=$value['nom'];?> <?=$value['prenom'];?>
                 </td>
                 <td>
+                    <?=$value['mail'];?>
                 </td>
                 <td>
+                    <a href="<?=BASE_URL;?>/compte?id_u=<?=$value['id_u'];?>">Modifier</a>
                 </td>
             </tr>
+
+            <?php
+            }
+            ?>
         </table>
     </div>
 

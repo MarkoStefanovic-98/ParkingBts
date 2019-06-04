@@ -26,17 +26,6 @@ function updateProfilMail($id_u,$mail)
     $req->execute();
 }
 
-function updateProfilPassword($id_u,$mdp)
-{
-    global $bdd;
-    $req = $bdd->prepare('UPDATE user SET mdp = :mdp WHERE id_u = :id_u');
-    $req->bindValue(':id_u', $id_u);
-    $req->bindParam(':mdp', sha1($mdp));
-    $req->execute();
-
-    return $req->fetch();
-}
-
 function mdppp($id_u,$mdp)
 {
     global $bdd;

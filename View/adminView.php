@@ -37,7 +37,7 @@ Bienvenue Grand ADMIN
                     <td>
                         <?= $v['mail'];?>
                     </td>
-                    <td><a href="<?=BASE_URL;?>/acceptInscrit/<?=$v['id_u'];?>">confirmer</a></td>
+                    <td><a href="<?=BASE_URL;?>/acceptInscrit/<?=$v['id_u'];?>">Confirmer</a></td>
                     <td><a href="<?=BASE_URL;?>/admin/<?=$v['id_u'];?>">Supprimer</a></td>
                 </tr>
                 <?php
@@ -65,7 +65,7 @@ Bienvenue Grand ADMIN
                         <?= $value['nom']."  ".$value['prenom'];?>
                     </td>
                     <td>
-                        <a href="<?=BASE_URL;?>/compte?id_u=<?=$value['id_u'];?>">Changer le mot de passe</a>
+                        <a href="<?=BASE_URL;?>/compte?id_u=<?=$value['id_u'];?>">Modifier</a>
                     </td>
                     <td><a href="<?=BASE_URL;?>/admin/<?=$value['id_u'];?>">Supprimer</a></td>
                 </tr>

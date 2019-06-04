@@ -19,7 +19,7 @@ if(isset($_POST['submit_inscription']))
                         <div class="col-md-6">
                             <div class="form-label-group">
                                 <input type="text" id="firstName" class="form-control" name="nom" placeholder="First name" required="required" autofocus="autofocus">
-                                <label for="firstName">nom</label>
+                                <label for="firstName">Nom</label>
                             </div>
                         </div>
                         <div class="col-md-6">

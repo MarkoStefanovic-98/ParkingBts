@@ -29,7 +29,7 @@ function displayInfo($id_u)
     global $bdd;
     $req = $bdd->prepare("SELECT * FROM user WHERE id_u =".$id_u);
     $req->execute();
-    return $req->fetch();
+    return $req;
 }
 //Liste des places
 function displayPlaceAttente($id_u)
