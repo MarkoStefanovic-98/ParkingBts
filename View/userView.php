@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <div class="tab-pane fade" id="nav-his" role="tabpanel" aria-labelledby="nav-his-tab">
+    <div class="tab-pane fade" id="nav-profiles" role="tabpanel" aria-labelledby="nav-profiles-tab">
         <table class="table table-hover">
             <thead>
             <tr>
@@ -64,7 +64,7 @@
         </table>
     </div>
 
-    <div class="tab-pane fade" id="nav-pro" role="tabpanel" aria-labelledby="nav-pro-tab">
+    <div class="tab-pane fade" id="nav-his" role="tabpanel" aria-labelledby="nav-his-tab">
         <table class="table table-hover">
             <thead>
             <tr>
@@ -82,7 +82,7 @@
         </table>
     </div>
 
-    <div class="tab-pane fade" id="nav-profiles" role="tabpanel" aria-labelledby="nav-profiles-tab">
+    <div class="tab-pane fade" id="nav-pro" role="tabpanel" aria-labelledby="nav-pro-tab">
         <table class="table table-hover">
             <thead>
             <tr>
@@ -107,7 +107,7 @@
             <tr>
 
                 <th>Nom place</th>
-                <th>Date demande</th>
+                <th>Date</th>
                 <th>Etat</th>
             </tr>
             </thead>

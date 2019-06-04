@@ -15,16 +15,12 @@ if($_SESSION['lvl'] == 2)
 
     if(isset($_POST['submite']))
     {
-        echo $_SESSION['id_u'];
-
-
         $deb = $_POST['deb'];
         $fin = $_POST['fin'];
 
         reservePlace($id_u, $deb, $fin);
 
-       // header("location:".BASE_URL."/user?id_u=".$_SESSION['id_u']."");
-
+       header("location:".BASE_URL."/user?id_u=".$_SESSION['id_u']."");
     }
 }
 else
