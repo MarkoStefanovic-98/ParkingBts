@@ -20,9 +20,9 @@ if(isset($_POST['submit']))
 
     if($SESSION['lvl'] = 2){
         
-        header('Location:'.BASE_URL.'/accueil');
+        header('Location:'.BASE_URL.'/user?id_u='.($_SESSION['id_u']));
         
-                            }  
+                            }
     if($SESSION['lvl'] = 3){
         
         header('Location:'.BASE_URL.'/admin');

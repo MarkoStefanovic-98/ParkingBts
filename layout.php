@@ -70,7 +70,7 @@
             elseif (isset($_SESSION['connecte'])AND ($_SESSION['lvl'] == 2))
             {
                 echo '<li class="nav-item">
-                  <a class="nav-link" href="'.BASE_URL.'/user">
+                  <a class="nav-link" href="'.BASE_URL.'/user?id_u='.($_SESSION['id_u']).'">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Gestion-User</span></a>
                 </li>';

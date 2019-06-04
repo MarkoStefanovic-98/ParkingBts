@@ -65,7 +65,7 @@ Bienvenue Grand ADMIN
                         <?= $value['nom']."  ".$value['prenom'];?>
                     </td>
                     <td>
-                        <a href="<?=BASE_URL;?>/compte?id_u=<?=$value['id_u'];?>">Compte</a>
+                        <a href="<?=BASE_URL;?>/compte?id_u=<?=$value['id_u'];?>">Changer le mot de passe</a>
                     </td>
                     <td><a href="<?=BASE_URL;?>/admin/<?=$value['id_u'];?>">Supprimer</a></td>
                 </tr>
