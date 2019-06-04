@@ -1,7 +1,7 @@
 <center>
     <h1>
 
-        Bienvenue Grand ADMIN
+        Bienvenue Grand USER
 
     </h1></center>
 <nav>
