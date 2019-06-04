@@ -24,7 +24,7 @@
         <ul class="navbar-nav ml-auto ml-md-0">
             <li class="nav-item dropdown no-arrow">
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-user-circle fa-fw"></i> </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown"> <a class="dropdown-item" href="#">Paramètre</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                     <?php
                        if (isset($_SESSION['connecte']))
             {      
@@ -56,6 +56,11 @@
                   <a class="nav-link" href="'.BASE_URL.'/login">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Connexion</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="'.BASE_URL.'/inscription">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Inscription</span></a>
                 </li>';
             }
 
