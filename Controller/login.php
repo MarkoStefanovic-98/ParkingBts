@@ -5,11 +5,11 @@ require "Modele/loginModele.php";
 if(isset($_POST['submit']))
 {
     $mail = $_POST['mail'];
-    $mdp = sha1($_POST['mdp']);
+    $mdp = SHA1($_POST['mdp']);
 
     $requete = $bdd->prepare("SELECT * FROM user WHERE mail = :mail AND mdp = :mdp");
     $requete->bindValue(":mail",$mail,PDO::PARAM_STR);
-    $requete->bindValue(":mdp",$mdp,PDO::PARAM_STR);
+    $requete->bindValue(":mdp", SHA1($mdp),PDO::PARAM_STR);
     $requete->execute();
 
     if($reponse = $requete->fetch())

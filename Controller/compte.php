@@ -1,16 +1,14 @@
 <?php
 require "Modele/compteModele.php";
-//$leCompte = leCompte(id_u);
-//$updatemdp = updateProfilPassword($id_u,$mdp);
 
-if(isset($_POST['submitchange']))
+
+if(isset($_POST['submit_change']))
 {
-    $mdp = $_POST['mdp'];
-    updateProfilPassword($id_u,$mdp);
-    header("location:".BASE_URL."/compte?id_u".$_GET['id_u']);
+
+    $id_u = $_POST['id_u'];
+    $mdp = SHA1($_POST['mdp']);
+    mdppp($_GET['id_u'],$mdp);
+
+    echo 'C BON !';
 }
-
-
-
 require "View/compteView.php";
-?>

@@ -4,7 +4,7 @@
         <div class="card-body">
          
          
-          <form method="post">
+          <form method="POST">
             <div class="form-group">
              
               <div class="form-label-group">
