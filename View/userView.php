@@ -56,8 +56,10 @@
             </thead>
                 <tr>
                     <td>
+
                     </td>
                     <td>
+
                     </td>
                     <td></td>
                 </tr>
@@ -72,13 +74,22 @@
                 <th>Date début - Date fin</th>
             </tr>
             </thead>
+            <?php
+            foreach($reponse as $key => $value)
+            {
+            ?>
             <tr>
                 <td>
+                    <?=$value['nom_p'];?>
                 </td>
                 <td>
+                    <?=$value['date_deb'];?> /
+                    <?=$value['date_fin'];?>
                 </td>
-                <td></td>
             </tr>
+                <?php
+            }
+            ?>
         </table>
     </div>
 
@@ -107,7 +118,7 @@
             <tr>
 
                 <th>Nom place</th>
-                <th>Date</th>
+                <th>Date début - Date fin</th>
                 <th>Etat</th>
             </tr>
             </thead>
@@ -120,7 +131,8 @@
                     place numéro : <?=$value['nom_p'];?>
                 </td>
                 <td>
-                    <?=$value['date_deb'];?>
+                    <?=$value['date_deb'];?> /
+                    <?=$value['date_fin'];?>
                 </td>
                 <td>en cours de vérification</td>
             </tr>

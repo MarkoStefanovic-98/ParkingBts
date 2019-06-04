@@ -19,9 +19,9 @@ function reservePlace($id_u, $deb, $fin)
 function displayReservedPlace($id_u)
 {
     global $bdd;
-    $req = $bdd->prepare("SELECT p.nom_p, r.lvl, r.date_deb FROM place p, user u, reserver r WHERE r.id_p = p.id_p AND r.id_u = u.id_u AND u.id_u=".$id_u);
+    $req = $bdd->prepare("SELECT p.nom_p, r.date_deb, r.date_fin FROM place p, user u, reserver r WHERE r.id_p = p.id_p AND r.id_u = u.id_u AND u.id_u=".$id_u);
     $req->execute();
-    return $req->fetch();
+    return $req;
 }
 // info utilisateur
 function displayInfo($id_u)
@@ -35,7 +35,7 @@ function displayInfo($id_u)
 function displayPlaceAttente($id_u)
 {
     global $bdd;
-    $req = $bdd->prepare("SELECT p.nom_p, r.date_deb FROM place p, user u, reserver r WHERE r.id_p = p.id_p AND r.id_u = u.id_u AND u.id_u = :id_u AND r.lvl = 0");
+    $req = $bdd->prepare("SELECT p.nom_p, r.date_deb, r.date_fin FROM place p, user u, reserver r WHERE r.id_p = p.id_p AND r.id_u = u.id_u AND u.id_u = :id_u AND r.lvl = 0");
     $req->bindValue("id_u", $id_u, PDO::PARAM_INT);
     $req->execute();
     return $req;
