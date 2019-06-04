@@ -9,14 +9,12 @@ if($_SESSION['lvl'] == 2)
     $reponse = displayReservedPlace($id_u);
     $info = displayInfo($id_u);
 }
-elseif($_SESSION['lvl'] == 1)
-{
-   echo'<h1>Veuillez patientez que l\'administateur valide votre inscription</h1>';
-}
+else
 {
     header("location: index.php");
 
 }
+
 
 require "View/userView.php"
 ?>
