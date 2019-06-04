@@ -1,6 +1,3 @@
-<?php echo $_GET['id_u'];
-    ?>
-
 <ul class="list-group">
     <div class="container">
         <div class="card card-login mx-auto mt-5">

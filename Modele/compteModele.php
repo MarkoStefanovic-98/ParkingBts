@@ -43,7 +43,7 @@ function mdppp($id_u,$mdp)
 
     $req = $bdd->prepare("UPDATE user SET mdp = :mdp WHERE id_u = :id_u");
     $req->bindValue(":id_u", $id_u, PDO::PARAM_INT);
-    $req->bindValue(":mdp", SHA1($mdp), PDO::PARAM_STR);
+    $req->bindValue(":mdp", $mdp, PDO::PARAM_STR);
     $req->execute();
 
 }
