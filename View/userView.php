@@ -54,15 +54,25 @@
                 <th>date début - date fin</th>
             </tr>
             </thead>
+            <?php
+            foreach($valide as $key => $value)
+            {
+            ?>
                 <tr>
                     <td>
-
+                        <?=$value['nom_p'];?>
                     </td>
                     <td>
-
+                        <?=$value['date_deb'];?>
                     </td>
-                    <td></td>
+                    <td>
+                        <?=$value['date_fin'];?>
+                    </td>
                 </tr>
+
+                <?php
+            }
+            ?>
         </table>
     </div>
 
@@ -107,7 +117,8 @@
                 </td>
                 <td>
                 </td>
-                <td></td>
+                <td>
+                </td>
             </tr>
         </table>
     </div>

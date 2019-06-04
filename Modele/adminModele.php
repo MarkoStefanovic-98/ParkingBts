@@ -35,20 +35,23 @@
     {
         global $bdd;
 
-        $req = $bdd->query("SELECT u.nom, u.prenom, r.lvl, p.nom_p, p.id_p, r.date_deb FROM reserver r, user u, place p WHERE r.lvl = 0 AND r.id_p = p.id_p AND u.id_u = r.id_u ORDER BY r.timestamp DESC");
+        $req = $bdd->query("SELECT r.id_r, u.nom, u.prenom, r.lvl, p.nom_p, p.id_p, r.date_deb 
+                                      FROM reserver r, user u, place p 
+                                      WHERE r.lvl = 0 AND r.id_p = p.id_p AND u.id_u = r.id_u 
+                                      ORDER BY r.timestamp DESC");
 
         return $req;
     }
 
-    function acceptPlace($id_p)
+    function acceptPlace($id_r)
     {
         global $bdd;
 
-        $req = $bdd->prepare("UPDATE reserver SET lvl = 1 WHERE id_p = :id_p");
-        $req->bindValue(":id_p", $id_p,  PDO::PARAM_INT);
+        $req = $bdd->prepare("UPDATE reserver SET lvl = 1 WHERE id_r = :id_r");
+        $req->bindValue(":id_r", $id_r,  PDO::PARAM_INT);
         $req->execute();
 
-        return $req->fetch();
+        return $req;
     }
 
     function acceptInscription($id_u)

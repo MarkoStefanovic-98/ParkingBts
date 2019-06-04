@@ -154,7 +154,7 @@ Bienvenue Grand ADMIN
                     <td>
                         <?=$value['date_deb'];?></td>
                     <td>
-                        <a href="<?=BASE_URL;?>/accepter/<?= $value['id_p'];?>">Accepter</a> / <a href="<?=BASE_URL;?>/refuser/<?= $value['id_p'];?>">Refuser</a>
+                        <a href="<?=BASE_URL;?>/accepter?id_r=<?= $value['id_r'];?>">Accepter</a> / <a href="<?=BASE_URL;?>/refuser/<?= $value['id_p'];?>">Refuser</a>
                     </td>
                 </tr>
                 <?php

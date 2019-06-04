@@ -44,7 +44,7 @@ function displayPlaceAttente($id_u)
 function displayPlaceValide($id_u)
 {
     global $bdd;
-    $req = $bdd->prepare("SELECT p.nom_p, o.date_deb FROM place p, user u, occuper o WHERE o.id_p = p.id_p AND o.id_u = u.id_u AND u.id_u = :id_u AND o.lvl = 1");
+    $req = $bdd->prepare("SELECT p.nom_p, r.date_deb, r.date_fin FROM place p, user u, reserver r WHERE r.id_p = p.id_p AND r.id_u = u.id_u AND u.id_u = :id_u AND r.lvl = 1");
     $req->bindValue("id_u", $id_u, PDO::PARAM_INT);
     $req->execute();
     return $req;

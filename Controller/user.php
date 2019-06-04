@@ -10,7 +10,7 @@ if($_SESSION['lvl'] == 2)
     $reponse = displayReservedPlace($id_u);
     $info = displayInfo($id_u);
     $demande = displayPlaceAttente($id_u);
-
+    $valide = displayPlaceValide($id_u);
 
 
     if(isset($_POST['submite']))
